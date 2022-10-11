@@ -21,6 +21,7 @@
     "@angular/router": "^14.0.0",
     "@ionic/angular": "^6.1.9",
     "@teamhive/lottie-player": "^1.0.0",
+    "angular-storage": "^0.0.15",
     "firebase": "^9.10.0",
     "ionicons": "^6.0.3",
     "rxjs": "~6.6.0",

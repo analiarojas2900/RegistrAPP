@@ -20,19 +20,20 @@
     <div class="pages">
       <div class="page">
         <br>
+        <form [formGroup]= "formularioRegistro">
         <div class="input">
           <ion-label class="title">Nombre</ion-label>
-          <ion-input type="text" minlength="3" maxlength="15"></ion-input>
+          <ion-input type="text" minlength="3" maxlength="15" formControlName="NombreU"></ion-input>
         </div>
         <br>
         <div class="input">
           <ion-label class="title">Correo</ion-label>
-          <ion-input type="text" [(ngModel)]="alumno.usuario" minlength="3" maxlength="15"></ion-input>
+          <ion-input type="text" formControlName="correo" minlength="3" maxlength="15"></ion-input>
         </div>
         <br>
         <div class="input">
           <ion-label class="title">Contraseña</ion-label>
-          <ion-input type="password" [(ngModel)]="alumno.password" minlength="4" maxlength="15"></ion-input>
+          <ion-input type="password" formControlName="password" minlength="4" maxlength="15"></ion-input>
         </div>
         <br>
         <ion-radio-group value="custom-checked">
@@ -44,8 +45,12 @@
           <ion-label class="title">Alumno</ion-label><ion-radio value="custom-checked">Alumno</ion-radio>
         </ion-item>
         </ion-radio-group>
+      </form>
         <br>
-        <ion-button expand="full" (click)="ingresar()">Ingresar</ion-button>
+        <ion-button expand="full" (click)="guardar()">
+          Registrar cuenta
+          <ion-icon name="checkmark"></ion-icon>
+      </ion-button>
         <ion-button [routerLink]="['/login']" class="olvide" color="dark" fill="clear" size="full">¿ya tienes cuenta?</ion-button>
       </div>
     </div>
