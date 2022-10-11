@@ -1,0 +1,53 @@
+<ion-content>
+  <ion-header>
+    <div class="header">
+      <div class="ion-text-center">
+        <ion-title class="colortitulo">Registr<span>APP</span></ion-title>
+      </div>
+    </div>
+  </ion-header>
+  <div class="container1">
+    <div class="tabs">
+      <div class="tabs1 active">
+        <br>
+        <label class="tab tabs--alumno" for="signin">
+          <div class="text">Registro</div>
+        </label>
+      </div>
+    </div>
+    <input type="radio" name="tab" id="signin" checked="checked" />
+      <input type="radio" name="tab" id="register" />
+    <div class="pages">
+      <div class="page">
+        <br>
+        <div class="input">
+          <ion-label class="title">Nombre</ion-label>
+          <ion-input type="text" minlength="3" maxlength="15"></ion-input>
+        </div>
+        <br>
+        <div class="input">
+          <ion-label class="title">Correo</ion-label>
+          <ion-input type="text" [(ngModel)]="alumno.usuario" minlength="3" maxlength="15"></ion-input>
+        </div>
+        <br>
+        <div class="input">
+          <ion-label class="title">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="alumno.password" minlength="4" maxlength="15"></ion-input>
+        </div>
+        <br>
+        <ion-radio-group value="custom-checked">
+          <ion-item class="item1">
+          <ion-label class="title">Profesor</ion-label><ion-radio value="custom"></ion-radio>
+        </ion-item>
+        <br>
+        <ion-item class="item1">
+          <ion-label class="title">Alumno</ion-label><ion-radio value="custom-checked">Alumno</ion-radio>
+        </ion-item>
+        </ion-radio-group>
+        <br>
+        <ion-button expand="full" (click)="ingresar()">Ingresar</ion-button>
+        <ion-button [routerLink]="['/login']" class="olvide" color="dark" fill="clear" size="full">¿ya tienes cuenta?</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,45 @@
+
+ion-content{
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --ion-background-color:linear-gradient( rgba(2,0,36,1) 0%, rgb(10, 75, 93) 35%, rgba(37,62,185,1) 100%);
+    position: inherit;
+    text-align: center !important;
+  }
+  
+
+.colortitulo{
+    background-size: 90px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    height: 60px;
+    position: relative;
+    border-radius: 5px;
+    top: 30px;
+    text-shadow: #525252 0.2em 0.2em;
+  }
+  .colortitulo.ios{
+   background-size: 90px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    height: 60px;
+    position: relative;
+    width: 120%;
+    border-radius: 5px;
+    top: 30px;
+  }
+  
+  
+  //para el titulo
+  span{
+    color:  #fbc30c ;
+  }
+  
+  
+  
+  .ion-text-center{
+    text-align: center;
+  }
+  
